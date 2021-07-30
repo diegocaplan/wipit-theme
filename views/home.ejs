@@ -1,0 +1,186 @@
+<!--
+__          __  _                            _         __          _______ _____ _____ _______ 
+\ \        / / | |                          | |        \ \        / /_   _|  __ \_   _|__   __|
+ \ \  /\  / /__| | ___ ___  _ __ ___   ___  | |_ ___    \ \  /\  / /  | | | |__) || |    | |   
+  \ \/  \/ / _ \ |/ __/ _ \| '_ ` _ \ / _ \ | __/ _ \    \ \/  \/ /   | | |  ___/ | |    | |   
+   \  /\  /  __/ | (_| (_) | | | | | |  __/ | || (_) |    \  /\  /   _| |_| |    _| |_   | |   
+    \/  \/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/      \/  \/   |_____|_|   |_____|  |_|   
+     
+    
+    BIENVENIDO A LA PRIMERA VERSION DE WIPIT BOARD
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wipit Board</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+    />
+    <link rel="icon" type="image/png" href="/img/logo_avatar_cuadrado.png" />
+    <link rel="stylesheet" href="/css/scribbler-global.css" />
+    <link rel="stylesheet" href="/css/scribbler-landing.css" />
+    <style>
+      .step {
+        display: inline-block;
+        width: 30%;
+        margin: 10px 10px;
+        box-shadow: 0 0 5px 0 gray;
+        text-align: center;
+        border-radius: 13px;
+      }
+      .step h5 {
+        font-size: 1em;
+      }
+      .step img {
+        width: 100%;
+      }
+
+      @media (max-width: 1000px) {
+        .step {
+          width: 90%;
+          margin: 20px;
+          padding: 10px;
+        }
+        .step h5 {
+          font-size: 1.3em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <% if (userLogged) { %>
+        <li class="menu__item">
+          <a href="/backlog" class="link link--dark" style="margin-right: 10px"
+            ><i class="fa fa-list" style="margin-right: 3px"></i> Backlog</a
+          >
+        </li>
+        <% }else{ %>
+        <li class="menu__item">
+          <a href="/auth/google" class="link link--dark"
+            >Ingresa con <i class="fa fa-google"></i>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a href="/getting-started" class="link link--dark"
+            >Ingresa <i class="fa fa-sign-in"></i
+          ></a>
+        </li>
+        <% } %>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">WIPIT BOARD</h1>
+      <p class="hero__description">El primer backlog para pair programming</p>
+    </div>
+    <div class="hero__terminal">
+      <pre>
+        <!-- Place your demo code here -->
+        <code class="shell-session demo">wipit ~ $ </code>
+      </pre>
+    </div>
+    <div class="wrapper">
+      <div class="installation">
+        <h3 class="section__title">¿Cómo funciona Wipit?</h3>
+        <div class="steps">
+          <div class="step">
+            <h5>Únete o sube tareas</h5>
+            <img src="/img/step1.jpg" alt="steps of how it works" />
+          </div>
+          <div class="step">
+            <h5>Chatea con tu compañero</h5>
+            <img src="/img/step2.jpg" alt="steps of how it works" />
+          </div>
+          <div class="step">
+            <h5>Comienza a hacer pair programming</h5>
+            <img src="/img/step3.jpg" alt="steps of how it works" />
+          </div>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature__item">
+          <h3 class="section__title">Rápido & Liviano</h3>
+          <p>
+            No necesita instalación. Estás en el mejor backlog del mundo. Comienza a
+            programar de a pares.
+          </p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Compartir pantalla</h3>
+          <p>Se encuentran en un meet y comienzan a ayudarse.</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Seguro</h3>
+          <p>
+            Encripta tus ideas. Nadie puede acceder a tus secretos. ¡Sólo comparte
+            pantalla!
+          </p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Configuración segura</h3>
+          <p>
+            No compartas tus archivos<span class="code code--inline">.env</span> . No
+            compartas contraseñas. Si lo haces, cámbialas enseguida.
+          </p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Limpio & Listo</h3>
+          <p>
+            Haz descripciones limpias y claras para todos. Puedes trabajar con juniors o
+            seniors.
+          </p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Beta gratis</h3>
+          <p>
+            Estamos aquí para aprender, practicar y ayudar. Armemos una comunidad. Te
+            necesitamos a ti, tu trabajo, tu experiencia y tu feedback.
+          </p>
+        </div>
+      </div>
+      <div class="callout">
+        <p>¡Comienza tus tareas pendientes ahora mismo!</p>
+        <a href="/getting-started" class="button--primary">Empezar</a>
+      </div>
+    </div>
+    <div class="changelog">
+      <div class="wrapper">
+        <h3 class="section__title">Changelog</h3>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.1</h4>
+            <small class="changelog__date">31/06/2021</small>
+          </div>
+          <div class="changelog__detail">
+            <ul>
+              <li>Posteos gratuitos</li>
+              <li>Tareas ilimitadas</li>
+              <li>Muchos lenguajes</li>
+              <li>Chat, tableros y meets</li>
+            </ul>
+          </div>
+        </div>
+        <div class="changelog__callout">
+          <a href="/getting-started" class="button--secondary">Empezar</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">WIPIT Board - Created by ID for Ideas</footer>
+    <script src="/js/scribbler.js"></script>
+  </body>
+</html>

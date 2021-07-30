@@ -1,0 +1,53 @@
+<style>
+  .action-right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+</style>
+<div class="block-box post-view">
+  <div class="post-header">
+    <div class="media">
+      <div class="user-img">
+        <img src="/img/chat_10.jpg" alt="Aahat" />
+      </div>
+      <div class="media-body">
+        <div class="user-title">
+          <a href="#">#desarrollo</a>
+          <a href="#">#frontend</a>
+          <a href="#">#Javascript</a>
+        </div>
+        <div class="user-title">
+          <br />
+          <h5>Necesito ayuda con Multer en Nodejs</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quasi
+            rerum, eaque quas optio mollitia eius officia voluptates officiis fugit a
+            natus temporibus, ipsam odio ratione earum excepturi facere? Aspernatur?
+          </p>
+        </div>
+        <ul class="entry-meta">
+          <li class="meta-privacy"><i class="icofont-brain-alt"></i> Fácil</li>
+          <li class="meta-time"><i class="icofont-clock-time"></i> 15min aprox</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="post-footer action-right">
+    <ul>
+      <% if (status == 1) { %>
+      <li>
+        <a href="#"><i class="icofont-ui-delete"></i>Eliminar</a>
+      </li>
+      <% } %> <% if (status == 2) { %>
+      <li>
+        <a href="javascript:void(0)" onclick="openChat()"
+          ><i class="icofont-ui-video-chat"></i> Chat</a
+        >
+      </li>
+      <li>
+        <a href="#"><i class="icofont-tick-boxed"></i>Finalizar</a>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+</div>

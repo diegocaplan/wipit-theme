@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="no-js js-focus-visible" lang="" data-js-focus-visible="">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Wipit Board</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/img/logo_avatar_cuadrado.png" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/icofont.min.css" />
+    <link rel="stylesheet" href="/css/slick.css" />
+    <link rel="stylesheet" href="/cssslick-theme.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/css/sal.css" type="text/css" />
+    <link rel="stylesheet" href="/css/select2.min.css" type="text/css" />
+
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="/css/app.css" />
+
+    <!-- Google Web Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <style type="text/css">
+      @font-face {
+        font-weight: 400;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 700;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2")
+          format("woff2");
+      }
+
+      @font-face {
+        font-weight: 900;
+        font-style: normal;
+        font-family: "Circular-Loom";
+
+        src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2")
+          format("woff2");
+      }
+      .item-logo a img {
+        max-width: 150px;
+      }
+      .item-logo h1,
+      .item-logo h3 {
+        color: #47749d;
+        margin: 0;
+        padding: 0;
+      }
+      .item-logo h1 {
+        font-size: 1.6em;
+        margin-bottom: -15px;
+      }
+      .item-logo h3 {
+        font-size: 1em;
+      }
+    </style>
+  </head>
+
+  <body class="sticky-header mobile-menu-wrapper" cz-shortcut-listen="true">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve your
+        experience and security.
+      </p>
+    <![endif]-->
+    <a href="#wrapper" data-type="section-switch" class="scrollup">
+      <i class="icofont-bubble-up"></i>
+    </a>
+    <!-- Preloader Start Here -->
+
+    <!-- Preloader End Here -->
+    <div id="wrapper" class="wrapper overflow-hidden">
+      <!--=====================================-->
+      <!--=          Header Menu Start       	=-->
+      <!--=====================================-->
+      <div class="login-page-wrap">
+        <div class="content-wrap">
+          <div class="login-content">
+            <div class="item-logo">
+              <a href="#"
+                ><img src="/img/logo_blanco.png" alt="logo" />
+                <h1>WIPIT BOARD</h1>
+                <h3>Primer backlog para pair programming</h3></a
+              >
+            </div>
+            <div class="login-form-wrap">
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    data-toggle="tab"
+                    href="#login-tab"
+                    role="tab"
+                    aria-selected="true"
+                    ><i class="icofont-users-alt-4"></i> Ingresa
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#registration-tab"
+                    role="tab"
+                    aria-selected="false"
+                    ><i class="icofont-download"></i> Regístrate</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div
+                  class="tab-pane login-tab fade show active"
+                  id="login-tab"
+                  role="tabpanel"
+                >
+                  <h3 class="item-title">Ingresa a tu cuenta</h3>
+                  <div class="google-signin">
+                    <a href="#"
+                      ><img src="/img/google-icon.png" alt="Google" />Ingresa con
+                      Google</a
+                    >
+                  </div>
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="login-email"
+                        placeholder="Tu E-mail"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        class="form-control"
+                        name="login-password"
+                        placeholder="Contraseña"
+                      />
+                    </div>
+                    <div class="form-group reset-password">
+                      <a href="#">* Resetear contraseña</a>
+                    </div>
+                    <div class="form-group mb-4">
+                      <div class="form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="validationFormCheck2"
+                        />
+                        <label class="form-check-label" for="validationFormCheck2"
+                          >Recuérdame</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="submit"
+                        name="login-btn"
+                        class="submit-btn"
+                        value="Ingresar"
+                      />
+                    </div>
+                  </form>
+                  <!-- <div class="account-create">
+                    		Don't have an account yet? <a href="#registration-tab">Sign Up Now</a>
+                    	</div> -->
+                </div>
+                <div
+                  class="tab-pane registration-tab fade"
+                  id="registration-tab"
+                  role="tabpanel"
+                >
+                  <h3 class="item-title">Completa el formulario de registro</h3>
+                  <form>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="fname"
+                        class="form-control"
+                        placeholder="Nombres"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="lname"
+                        class="form-control"
+                        placeholder="Apellidos"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        placeholder="E-mail"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        name="password"
+                        class="form-control"
+                        placeholder="Contraseña"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <input
+                        type="submit"
+                        name="registration"
+                        class="submit-btn"
+                        value="Completar registro"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map-line">
+            <img src="/img/map_line.png" alt="map" />
+            <ul class="map-marker">
+              <li><img src="/img/marker_1.png" alt="marker" /></li>
+              <li><img src="/img/marker_2.png" alt="marker" /></li>
+              <li><img src="/img/marker_3.png" alt="marker" /></li>
+              <li><img src="/img/marker_4.png" alt="marker" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="header-search" class="header-search">
+        <button type="button" class="close">×</button>
+        <form class="header-search-form">
+          <input type="search" value="" placeholder="Search here..." />
+          <button type="submit" class="search-btn">
+            <i class="flaticon-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Jquery Js -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/sal.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/validator.min.js"></script>
+    <script src="/js/select2.min.js"></script>
+
+    <!-- Site Scripts -->
+    <script src="/js/app.js"></script>
+  </body>
+</html>

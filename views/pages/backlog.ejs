@@ -1,0 +1,232 @@
+<%- include ../partials/head %> <%- include ../partials/header %> <%- include
+../partials/sidebar-left %>
+<style>
+  .drop-menu {
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .drop-menu label {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: -23px;
+    z-index: 999;
+    left: 5px;
+    color: gray;
+  }
+  .drop-menu h6 {
+    margin: 0;
+    padding: 0;
+    left: 0px;
+    position: relative;
+    margin-bottom: -25px;
+  }
+  .filter_btn {
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #47749d;
+    border-radius: 4px;
+    padding: 8px 32px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+</style>
+<div class="page-content">
+  <div class="container">
+    <!-- Banner Area Start -->
+    <div class="newsfeed-banner">
+      <div class="media">
+        <div class="item-icon">
+          <i class="icofont-network"></i>
+        </div>
+        <div class="media-body">
+          <h3 class="item-title">WIPIT BACKLOG</h3>
+          <p>Tareas pendientes para que te sumes a dar apoyo</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <%- include ../partials/post %>
+        <div class="newsfeed-search">
+          <ul class="member-list">
+            <li>
+              <div class="drop-menu">
+                <h6>Filtros:</h6>
+                <label>Por objetivo</label>
+                <select class="select2" required multiple>
+                  <option value="">--Selecciona un objetivo--</option>
+                  <option value="1">Status</option>
+                  <option value="1">Quotes</option>
+                  <option value="1">Photos</option>
+                  <option value="1">Videos</option>
+                </select>
+                <label>Por área</label>
+                <select class="select2" required multiple>
+                  <option value="">--Selecciona un área--</option>
+                  <option value="1">Status</option>
+                  <option value="1">Quotes</option>
+                  <option value="1">Photos</option>
+                  <option value="1">Videos</option>
+                </select>
+                <label>Por lenguaje</label>
+                <select class="select2" required multiple>
+                  <option value="">--Selecciona un lenguaje--</option>
+                  <option value="1">Status</option>
+                  <option value="1">Quotes</option>
+                  <option value="1">Photos</option>
+                  <option value="1">Videos</option>
+                </select>
+              </div>
+              <button class="filter_btn">Buscar</button>
+            </li>
+          </ul>
+          <ul class="search-list">
+            <li class="search-filter">
+              <button class="drop-btn" type="button">
+                <i class="icofont-listing-number"></i>
+              </button>
+              <div class="drop-menu">
+                <select
+                  class="select2 select2-hidden-accessible"
+                  data-select2-id="1"
+                  tabindex="-1"
+                  aria-hidden="true"
+                >
+                  <option data-select2-id="3">--Ordenar por--</option>
+                  <option>Recientes</option>
+                  <option>Antiguos</option>
+                  <option>Fáciles</option>
+                  <option>Difíciles</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <%- include('../partials/task',{status:1}) %> <%-
+        include('../partials/task',{status:1}) %> <%-
+        include('../partials/task',{status:1}) %>
+        <div class="block-box load-more-btn">
+          <a href="#" class="item-btn"
+            ><i class="icofont-refresh"></i>Cargar más tareas</a
+          >
+        </div>
+      </div>
+      <div class="col-lg-4 widget-block widget-break-lg">
+        <div class="widget widget-author">
+          <div class="author-heading">
+            <div class="cover-img">
+              <img src="/img/shape_12.jpg" alt="cover" />
+            </div>
+            <div class="profile-img">
+              <a href="#">
+                <img src="/img/author_1.jpg" alt="author" />
+              </a>
+            </div>
+            <div class="profile-name">
+              <h4 class="author-name"><a href="#">Rebeca Powel</a></h4>
+              <div class="author-location"><strong>Software Developer Ssr</strong></div>
+              <div class="author-location">
+                Soy una desarrolladora con más de 3 años de experiencia en busca de nuevos
+                desafios. Estoy aca para implementar lo aprenndido en habilidades blandas.
+              </div>
+            </div>
+          </div>
+          <ul class="author-statistics">
+            <li>
+              <a href="#"
+                ><span class="item-number">2</span>
+                <span class="item-text">PENDIENTES</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="item-number">1</span>
+                <span class="item-text">EN PROGRESO</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="item-number">14</span>
+                <span class="item-text">FINALIZADAS</span></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="widget widget-memebers widget-activity">
+          <div class="widget-heading">
+            <h3 class="widget-title">Últimas actividades</h3>
+          </div>
+          <div class="activity-list">
+            <div class="media">
+              <div class="item-img">
+                <a href="#">
+                  <img src="/img/chat_10.jpg" alt="Chat" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="item-title">
+                  <a href="#" class="author-name">Aahat Akter</a>
+                  commented on Destroy Dex's
+                  <a href="#" class="activity-link">Photo</a>
+                </h4>
+                <div class="activity-time">20 minutes ago</div>
+              </div>
+            </div>
+            <div class="media">
+              <div class="item-img">
+                <a href="#">
+                  <img src="/img/chat_8.jpg" alt="Chat" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="item-title">
+                  <a href="#" class="author-name">Neko Bebop</a>
+                  liked Marina
+                  <a href="#" class="activity-link">Status</a>
+                </h4>
+                <div class="activity-time">15 minutes ago</div>
+              </div>
+            </div>
+            <div class="media">
+              <div class="item-img">
+                <a href="#">
+                  <img src="/img/chat_1.jpg" alt="Chat" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="item-title">
+                  <a href="#" class="author-name">Neko Bebop</a>
+                  commented on Destroy Dex's
+                  <a href="#" class="activity-link">Photo</a>
+                </h4>
+                <div class="activity-time">20 minutes ago</div>
+              </div>
+            </div>
+            <div class="media">
+              <div class="item-img">
+                <a href="#">
+                  <img src="/img/chat_6.jpg" alt="Chat" />
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="item-title">
+                  <a href="#" class="author-name">Neko Bebop</a>
+                  commented on Destroy Dex's
+                  <a href="#" class="activity-link">Photo</a>
+                </h4>
+                <div class="activity-time">20 minutes ago</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%- include ../partials/footer %>
+</div>
+<%- include ../partials/chat %> <%- include ../partials/eof %>
